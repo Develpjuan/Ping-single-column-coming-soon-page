@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    padding: 100px 25px 35px;
+}
+
+.content-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-information__title {
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+    margin-top: 45px;
+}
+
+.color {
+    color: rgb(21, 31, 41);
+    font-weight: 700;
+}
+
+.content-information__text {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgb(194, 211, 255);
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+
+.input::placeholder {
+    color: rgb(194, 211, 255);
+}
+
+.input-active {
+    border: 1px solid rgb(255, 82, 99);
+}
+
+.error-message {
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: rgb(255, 82, 99);
+}
+
+.error-message-active {
+    display: block;
+}
+
+.form__btn {
+    width: 100%;
+    background-color: rgb(79, 125, 243);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    border: 1px solid rgb(79, 125, 243);
+    border-radius: 25px;
+    box-shadow: 0 7px 8px rgba(79, 125, 243, 0.24);
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: rgba(79, 125, 243, 0.856);
+}
+
+.content-information__img {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__items {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+    border: 1px solid rgb(194, 211, 255);
+    border-radius: 50%;
+}
+
+.item:hover {
+    background-color: rgb(79, 125, 243);
+}
+
+.item:hover .icon {
+    color: rgb(255, 255, 255);
+}
+
+.icon {
+    color: rgb(79, 125, 243);
+    font-size: 20px;
+}
+
+.footer__text {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+}
+
+.f {
+    color: rgb(79, 125, 243);
+    color: rgb(194, 211, 255);
+    color: rgb(255, 82, 99);
+    color: rgb(150, 150, 150);
+    color: rgb(21, 31, 41);
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        padding: 50px 200px 20px;
+    }
+    .content-information__title {
+        font-size: 35px;
+        margin-bottom: 13px;
+    }
+
+    .form {
+        display: flex;
+        align-items: start;
+    }
+
+    .container-input {
+        width: 70%;
+        margin-right: 15px;
+    }
+
+    .input {
+        margin-bottom: 0;
+    }
+
+    .error-message {
+        text-align: left;
+        margin: 5px 0 0 0;
+        padding-left: 30px;
+    }
+
+    .form__btn {
+        width: 30%;
+    }
+}
+
